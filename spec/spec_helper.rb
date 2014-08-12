@@ -3,6 +3,8 @@ require 'pg'
 require 'active_record'
 # require 'pry'
 require 'product'
+require 'cashier'
+require 'sale'
 
 ActiveRecord::Base.establish_connection(YAML::load(File.open('./db/config.yml'))["test"])
 
