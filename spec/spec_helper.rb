@@ -1,11 +1,13 @@
 require 'rspec'
 require 'pg'
 require 'active_record'
-# require 'pry'
+require 'shoulda/matchers'
+require 'pry'
 require 'product'
 require 'cashier'
 require 'sale'
-require 'shoulda/matchers'
+require 'cart'
+
 
 ActiveRecord::Base.establish_connection(YAML::load(File.open('./db/config.yml'))["test"])
 
